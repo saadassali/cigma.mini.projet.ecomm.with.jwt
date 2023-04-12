@@ -15,6 +15,8 @@ import java.util.stream.Collectors;
 
 @RequestMapping("/api/product")
 @RestController
+@CrossOrigin
+
 public class ProductControllerImpl {
     private final ProductService productService;
 
