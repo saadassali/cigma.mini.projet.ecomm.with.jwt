@@ -4,28 +4,27 @@ import ma.cigma.ecomm.mini.project.domaine.EmpVo;
 import ma.cigma.ecomm.mini.project.domaine.Product;
 import ma.cigma.ecomm.mini.project.domaine.RoleVo;
 import ma.cigma.ecomm.mini.project.domaine.UserVo;
-import ma.cigma.ecomm.mini.project.service.IEmpService;
-import ma.cigma.ecomm.mini.project.service.IUserService;
-import ma.cigma.ecomm.mini.project.service.ProductService;
+import ma.cigma.ecomm.mini.project.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.core.userdetails.*;import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
-
-
+//        @Autowired
+//       UserDetailsService userService;
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+
+
+            SpringApplication.run(Application.class, args);
 	}
 
 	@Bean
@@ -88,7 +87,6 @@ public class Application implements CommandLineRunner {
 //		userService.cleanDataBase();
 //		userService.save(new RoleVo("ADMIN"));
 //		userService.save(new RoleVo("CLIENT"));
-//
 //		RoleVo roleAdmin = userService.getRoleByName("ADMIN");
 //		RoleVo roleClient = userService.getRoleByName("CLIENT");
 //		UserVo admin1 = new UserVo("admin1", "admin1", Arrays.asList(roleAdmin));

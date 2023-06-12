@@ -1,7 +1,6 @@
 package ma.cigma.ecomm.mini.project.config;
 
 import io.jsonwebtoken.ExpiredJwtException;
-import jdk.management.resource.ResourceType;
 import ma.cigma.ecomm.mini.project.service.IUserService;
 import ma.cigma.ecomm.mini.project.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
